@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1.git branch命令查当前git仓库所有分支, 分支名字前面的*号表示当前所处分支
+
+    2.创建新分支, 可以基于当前分支,创建一个新分支,新分支中的代码和当前分支完全一样
+      git branch 新分支名字 创建完新分支后所处与当前分支
+
+    3.切换分支
+      git checkout 分支名字
+
+    4.分支的快速创建和切换
+      git checkout -b 分支名称 -b表示创建一个新分支, checkout表示切换到刚新建的分支上
+
+    5.合并分支: 
+      1.切换到主分支 git checkout main 
+      2.get merge login
+
+    6.删除分支
+      git branch -d 分支名称
+
+    7.遇到冲突时的分支合并
+      手动解决
+
+    8.将本地分支推送到远程仓库
+      第一次推送带 -u
+      git push -u 远程仓库的别名 本地分支名称:远程分支名称
+    
+    9.查看远程仓库所有的分支列表
+      git remote show 远程仓库名字
+    
+    10.跟踪分支:从远程仓库中,把远程分支下载到本地仓库中
+      git checkout 远程分支名字
+      重命名: git checkout -b 本地分支名字 远程仓库名字/远程分支名字
+
+    11.拉去远程分支的最新代码
+      git pull
+    
+    12.删除远程分支
+      git push 远程仓库的名字 --delete 远程分支名称
+      //git push origin --delete pay
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1.新建空白远程仓库
+     远程仓库两种访问方式HTTPS和SSH
+     HTTPS:零配置;但是每次访问仓库时,需要重复输入github的账号和密码
+     SSH: 需要进行额外的配置,但是配置成功后,每次访问不需要重复输入账号和密码
+    令牌密码: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
+    
+    2.远程仓库克隆到本地
+     git clone 远程仓库的地址
+
+    3.issues
+        提示出错信息:fatal: remote origin already exists.
+        解决办法如下：
+          1、先输入$ git remote rm origin
+          2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git 就不会报错了！
+</body>
+</html>
