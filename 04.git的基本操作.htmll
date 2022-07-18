@@ -79,6 +79,13 @@
        4.以！开头表示取反
        5.可以使用glob模式进行文件和文件夹的匹配(glob指简化了的正则表达式)
 
+       1. *.a => 代表忽略所有以.a结尾的文件
+       2. !lib.a => 代表跟踪所有的lib.a文件
+       3. /TODO => 代表忽略当前目录下的TODO文件 而不忽略subdir/TODO(其他目录下的TODO)
+       4. build/ => 忽略所有目录下名为build的文件夹  //忽略build目录下的所有文件
+       5. doc/*.txt => 忽略doc/notes.txt文件 但不忽略 doc/serve/notes.txt文件
+       6. doc/**/*.txt => 忽略doc目录下子目录下所有的.txt文件
+
       14.查看提交历史
         使用git log命令 键盘q退出
         按时间先后顺序列出所有的提交历史,最近的提交排在最上面 git log
